@@ -4,17 +4,17 @@
    <link rel="stylesheet" href="css/estils.css">      (des de l'arrel) */
 
 :root {
-  /* Colors principals de marca i accent */
-  --color1: #122542;       /* Abans: --mari (Color principal fosc) */
-  --color2: #0c6e73;       /* Abans: --teal (Color secundari / enllaços) */
-  --color3: #66F1C2;       /* Abans: --ambre (Color d'accent clar) */
+  /* Colors principals fons */
+  --color1: #1B3B32;
+  --color2: #4A7C59;
+  --color3: #B5E2FA;
   
-  /* Colors de text i fons */
-  --color-text1: #1b2430;  /* Abans: --tinta */
-  --color-text2: #57626c;  /* Abans: --tinta-suau */
-  --color-fons: #f5f6f8;   /* Abans: --fons */
-  --color-blanc: #ffffff;  /* Abans: --blanc */
-  --color-vora: #dde2e7;   /* Abans: --vora */
+  /* Colors de text */
+  --color-text1: #1b2430;
+  --color-text2: #57626c;
+  --color-fons: #f5f6f8;
+  --color-blanc: #ffffff;
+  --color-vora: #dde2e7;
   
   /* Altres propietats */
   --radi: 12px;
