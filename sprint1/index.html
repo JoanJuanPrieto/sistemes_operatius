@@ -1,155 +1,124 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sprint 1 · Instal·lació i configuració inicial</title>
-    <link rel="stylesheet" href="../css/estils.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sprint 1 · Implementació i Gestió d’un Sistema Ubuntu</title>
+<link rel="stylesheet" href="../css/estils.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Sprint 1 · Instal·lació i configuració inicial</h1>
+<header class="hero">
+  <nav class="hero-nav">
+    <a href="../index.html">Portada</a>
+    <a href="../sprints.html">Índex de sprints</a>
+    <a href="https://github.com/" target="_blank" rel="noopener">Codi a GitHub ↗</a>
+  </nav>
 
-        <nav>
-            <a href="../index.html">Inici</a>
-            <a href="../sprints.html">Sprints</a>
-            <a href="https://github.com/" target="_blank" rel="noopener">
-                GitHub
-            </a>
-        </nav>
-    </header>
+  <div class="hero-titol">
+    <p class="miguetes">
+      <a href="../index.html">Portada</a> /
+      <a href="../sprints.html">Índex de sprints</a> /
+      Sprint 1
+    </p>
 
-    <main>
+    <h1>Implementació i Gestió d’un Sistema Ubuntu</h1>
+    <p class="subtitol">Índex d'apartats d'aquest sprint</p>
+  </div>
+</header>
 
-        <section id="document">
-            <h2>Document del Sprint 1</h2>
+<main class="contenidor">
+  <section class="panell">
 
-            <p>
-                Consulta el document de la pràctica o descarrega'l
-                per llegir-lo al teu ordinador.
-            </p>
+    <a id="index-apartats"></a>
 
-            <!-- Opció 1: obrir el document -->
-            <p>
-                <a
-                    href="0483 –Sistemes Informàtics Sprint 1.docx"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    📄 Obrir el document Word
-                </a>
-            </p>
+    <table class="taula-apartats">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Apartat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><a href="#apartat1">Tasca Sprint 1</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><a href="#apartat2">Descàrrega de tasca Sprint 1</a></td>
+        </tr>
+      </tbody>
+    </table>
 
-            <!-- Opció 2: descarregar el document -->
-            <p>
-                <a
-                    href="0483 –Sistemes Informàtics Sprint 1.docx"
-                    download
-                >
-                    ⬇️ Descarregar el document Word
-                </a>
-            </p>
+    <article class="apartat" id="apartat1">
+      <h2>1. Tasca Sprint 1</h2>
 
-            <!-- Opció 3: provar de visualitzar-lo incrustat -->
-            <h3>Visualització del document</h3>
+      <p>
+        En aquest sprint treballarem amb el sistema operatiu Ubuntu Linux
+        dins d'una màquina virtual. Aprendrem a instal·lar-lo i configurar-lo,
+        gestionar l'arrencada amb GRUB, crear punts de restauració amb
+        Timeshift i configurar la connexió de xarxa TCP/IP.
+      </p>
 
-            <div class="document-visor">
-                <iframe
-                    src="0483 –Sistemes Informàtics Sprint 1.docx"
-                    width="100%"
-                    height="600"
-                    title="Document del Sprint 1"
-                >
-                </iframe>
-            </div>
+      <p>
+        També instal·larem i gestionarem aplicacions, configurarem còpies
+        de seguretat automàtiques i practicarem la virtualització.
+        Finalment, comprovarem que tot funcioni correctament i documentarem
+        el procés amb captures de pantalla.
+      </p>
 
-            <p>
-                Si el document no es visualitza dins d'aquesta finestra,
-                utilitza l'enllaç per obrir-lo o descarregar-lo.
-            </p>
-        </section>
+      <p class="tornar-index">
+        <a href="#index-apartats">↑ Tornar a l'índex</a>
+      </p>
+    </article>
 
-        <hr>
+    <article class="apartat" id="apartat2">
+      <h2>2. Descàrrega de tasca Sprint 1</h2>
 
-        <section id="apartat1">
-            <h2>1. Instal·lació del sistema operatiu</h2>
+      <p>
+        En aquest apartat pots descarregar el document Word amb
+        l'enunciat i la documentació de la tasca del Sprint 1.
+        Fes clic a l'enllaç següent per obtenir el fitxer.
+      </p>
 
-            <p>
-                En aquest apartat es documenta la instal·lació d'Ubuntu
-                Linux en una màquina virtual, incloent-hi la configuració
-                inicial i les comprovacions necessàries per verificar
-                que el sistema funciona correctament.
-            </p>
+      <p>
+        <a href="../documents/0483%20%E2%80%93Sistemes%20Inform%C3%A0tics%20Sprint%201.docx"
+           download>
+          📄 Descarregar document: 0483 – Sistemes Informàtics Sprint 1.docx
+        </a>
+      </p>
 
-            <img
-                src="../img/exemple.svg"
-                alt="Imatge de la instal·lació del sistema operatiu"
-            >
-        </section>
+      <p class="tornar-index">
+        <a href="#index-apartats">↑ Tornar a l'índex</a>
+      </p>
+    </article>
 
-        <hr>
+  </section>
+</main>
 
-        <section id="apartat2">
-            <h2>2. Configuració de xarxa bàsica</h2>
-
-            <p>
-                Es comprova la configuració de l'adaptador de xarxa de la
-                màquina virtual i l'accés a Internet. També es poden
-                consultar les interfícies i les adreces IP amb l'ordre
-                <code>ip addr</code> i provar la connectivitat amb
-                <code>ping</code>.
-            </p>
-        </section>
-
-        <hr>
-
-        <section id="apartat3">
-            <h2>3. Creació d'usuaris i grups</h2>
-
-            <p>
-                Es revisa la gestió d'usuaris i grups d'Ubuntu per
-                organitzar els comptes i els permisos del sistema.
-                Les operacions administratives s'han de realitzar
-                amb els privilegis adequats.
-            </p>
-
-            <img
-                src="../img/exemple.svg"
-                alt="Imatge de la gestió d'usuaris i grups"
-            >
-        </section>
-
-        <hr>
-
-        <section id="apartat4">
-            <h2>4. Comprovació final</h2>
-
-            <p>
-                Per acabar, es comprova que el sistema arranca
-                correctament, que la xarxa funciona i que els usuaris
-                i grups s'han configurat com estava previst.
-            </p>
-
-            <p>
-                També es pot revisar el gestor d'arrencada GRUB i
-                configurar Timeshift per crear instantànies que
-                faciliten la recuperació del sistema davant de
-                possibles errors.
-            </p>
-        </section>
-
-    </main>
-  
 <footer class="peu">
   <p class="peu-llicencia">
-    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" target="_blank" rel="license noopener">
-      <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="Llicència Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0" width="88" height="31">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"
+       target="_blank" rel="license noopener">
+      <img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png"
+           alt="Llicència Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0"
+           width="88" height="31">
     </a>
-    <span>Contingut sota llicència <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca" target="_blank" rel="license noopener">CC BY-NC-SA 4.0</a></span>
+
+    <span>
+      Contingut sota llicència
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca"
+         target="_blank" rel="license noopener">
+        CC BY-NC-SA 4.0
+      </a>
+    </span>
   </p>
-  <p class="autoria">Autor: <strong>Joan Juan Prieto</strong> · Pràctica 0 · Sistemes Operatius (ISOPJ1)</p>
+
+  <p class="autoria">
+    Autor: <strong>Joan Juan Prieto</strong> · Pràctica 0 ·
+    Sistemes Operatius (ISOPJ1)
+  </p>
 </footer>
 
 </body>
